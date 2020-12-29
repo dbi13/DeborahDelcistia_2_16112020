@@ -1,0 +1,121 @@
+
+p, h1, h2 
+{
+    font-family : 'Raleway', sans-serif;
+}
+
+h1, h2
+{
+    font-weight: bold;
+}
+
+
+#inscription a
+{
+    text-decoration : none;
+    color : #0065FC;
+    font-weight : 800;
+}
+
+#inscription
+{
+    margin-right : 3%;
+}
+
+#logo 
+{
+    margin-left : 3%;
+}
+
+#heb a
+{
+    padding-bottom: 5%;
+}
+
+nav a 
+{
+    text-decoration : none;
+    color : black;
+}
+
+nav a:hover 
+{
+    color : #0065FC;
+}
+
+nav a:active
+{
+    color : #0065FC;
+}
+
+
+/* résolution mobile  */
+@media all and (max-device-width: 480px), only screen and (max-width:600px)
+{
+
+#hautSite
+{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+
+}
+
+nav
+{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-around;
+    border-bottom: 4px #F2F2F2 solid;
+    }
+
+#heb
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+#heb :hover
+{
+    display: flex;
+    border-bottom: 4px #0065FC solid;
+    width: 50%;
+}
+
+#act
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+h1
+{
+    font-size: 1.7em;
+    margin-left: 3%;
+    margin: 5% 18% 3% 3%;
+}
+
+header p 
+{
+    font-size: 1em;
+    margin-left: 3%;
+    margin-bottom: 10%;
+}
+    
+form 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.villeSearch
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 4% 4% 4% 4%;
+    border: 1.5px #F2F2F2 solid;
+}
+
+}
