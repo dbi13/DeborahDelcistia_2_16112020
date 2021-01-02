@@ -1,7 +1,8 @@
 
-p, h1, h2 
+body
 {
     font-family : 'Raleway', sans-serif;
+    font-size: 1em;
 }
 
 h1, h2
@@ -9,6 +10,15 @@ h1, h2
     font-weight: bold;
 }
 
+/* header */
+
+#hautSite
+{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+
+}
 
 #inscription a
 {
@@ -27,10 +37,7 @@ h1, h2
     margin-left : 3%;
 }
 
-#heb a
-{
-    padding-bottom: 5%;
-}
+/* navigation */
 
 nav a 
 {
@@ -48,10 +55,14 @@ nav a:active
     color : #0065FC;
 }
 
+/* formulaire de recherche */
+
 form 
 {
     display: flex;
     flex-direction: row;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .villeSearch
@@ -83,9 +94,11 @@ button
     padding-top: 1%;
     margin-left: -4%;
     width: 14%;
-    border-radius: 30% 30% 30% 30%;
+    border-radius: 30%;
     border: none;
 }
+
+/* filtres  */
 
 #filtres
 {
@@ -97,51 +110,131 @@ button
 {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
-#economique p 
+#economique i 
 {
-    font-size: 1em;
-    font-style: bold;
-    border: 2.5px #F2F2F2 solid;
-    padding: 4% 6% 4% 6%;
-    border-radius: 25%;
-    text-align: center;
+    font-size: 1.2em;
+    position: absolute;
+    color: #0065FC;
+    padding: 16px ;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    margin-right: -35px;
+    margin-top: 17px;
 }
+
+#economique p
+{
+    padding: 13px 15px 13px 56px;
+    border: 3px #F2F2F2 solid;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+#familial
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+}
+
+#familial i 
+{
+    font-size: 1.2em;
+    position: absolute;
+    color: #0065FC;
+    padding: 16px ;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    margin-right: -35px;
+    margin-top: 17px;
+}
+
+#familial p
+{
+    padding: 13px 15px 13px 50px;
+    border: 3px #F2F2F2 solid;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+#romantique
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#romantique i 
+{
+    font-size: 1.2em;
+    position: absolute;
+    color: #0065FC;
+    padding: 16px ;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    margin-right: -35px;
+    margin-top: 17px;
+}
+
+#romantique p
+{
+    padding: 13px 15px 13px 50px;
+    border: 3px #F2F2F2 solid;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+#animaux
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+#animaux i 
+{
+    font-size: 1.2em;
+    position: absolute;
+    color: #0065FC;
+    padding: 16px ;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    margin-right: -35px;
+    margin-top: 17px;
+}
+
+#animaux p
+{
+    padding: 13px 15px 13px 50px;
+    border: 3px #F2F2F2 solid;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
 
 /* résolution mobile  */
 @media all and (max-device-width: 480px), only screen and (max-width:600px)
 {
 
-#hautSite
-{
-    display : flex;
-    flex-direction : row;
-    justify-content : space-between;
-
-}
-
 nav
 {
-    display : flex;
-    flex-direction : row;
-    justify-content : space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
     border-bottom: 4px #F2F2F2 solid;
-    }
+}
 
 #heb
 {
     display: flex;
     width: 50%;
     justify-content: center;
-}
-
-#heb :hover
-{
-    display: flex;
-    border-bottom: 4px #0065FC solid;
-    width: 50%;
 }
 
 #act
@@ -159,17 +252,10 @@ h1
 
 header p 
 {
-    font-size: 1em;
     margin-left: 5%;
     margin-bottom: 7%;
 }
     
-form 
-{
-    margin-bottom: 6%;
-    justify-content: center;
-}
-
 header h2
 {
     margin-left: 5%;
