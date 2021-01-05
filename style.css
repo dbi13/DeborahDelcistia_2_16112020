@@ -1,8 +1,10 @@
 
 body
 {
+    position: relative;
     font-family : 'Raleway', sans-serif;
     font-size: 1em;
+    margin:0;
 }
 
 h1, h2
@@ -10,8 +12,13 @@ h1, h2
     font-weight: bold;
 }
 
-/* header */
+h1
+{
+    font-size: 1.6em;
+    margin: 25px 50px 15px 20px;
+}
 
+/* header */
 #hautSite
 {
     display : flex;
@@ -29,16 +36,15 @@ h1, h2
 
 #inscription
 {
-    margin-right : 3%;
+    margin-right : 20px;
 }
 
 #logo 
 {
-    margin-left : 3%;
+    margin-left : 20px;
 }
 
 /* navigation */
-
 nav a 
 {
     text-decoration : none;
@@ -56,21 +62,21 @@ nav a:active
 }
 
 /* formulaire de recherche */
-
 form 
 {
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
 
 .villeSearch
 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 4% 0% 4% 4%;
+    padding: 15px 0px 15px 20px;
     border: 1.5px #F2F2F2 solid;
+    width: 350px;
 }
 
 #map
@@ -78,11 +84,10 @@ form
     font-size: 1.3em;
     text-align: center;
     background-color: #F2F2F2;
-    width: 14%;
-    padding-top: 4.5%;
-    border-radius: 30% 0% 0% 30%;
-    margin-right: -1%;
-
+    width: 64px;
+    padding-top: 20px;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: -5px;
 }
 
 button
@@ -91,129 +96,447 @@ button
     text-align: center;
     color: white;
     background-color: #0065FC;
-    padding-top: 1%;
-    margin-left: -4%;
-    width: 14%;
-    border-radius: 30%;
+    padding-top: 5px;
+    margin-left: -50px;
+    width: 60px;
+    border-radius: 20px;
     border: none;
 }
 
 /* filtres  */
+header h2
+{
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+header p 
+{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
 
 #filtres
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
+/* filtre economique */
 #economique
 {
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-    margin-right: 10%;
+    margin-left: 10px;
+    position: relative;
 }
 
 #economique i 
 {
+    width: 20px;
+    height: 20px;
+    text-align: center;
     font-size: 1.2em;
     position: absolute;
     color: #0065FC;
     padding: 16px ;
     background-color: #DEEBFF;
     border-radius: 35px;
-    margin-right: -35px;
-    margin-top: 17px;
+    margin-left: 18px;
+    margin-top: 16px;
 }
 
 #economique p
 {
-    padding: 13px 15px 13px 56px;
+    padding: 13px 10px 13px 60px;
     border: 3px #F2F2F2 solid;
     border-radius: 30px;
     font-weight: 800;
+    width: 110px;
 }
 
+/* filtre familial */
 #familial
 {
     display: flex;
     flex-direction: row;
-    margin-right: 10%;
+    position: relative;
+    margin-left: 10px;
 }
 
 #familial i 
 {
+    width: 20px;
+    height: 20px;
+    text-align: center;
     font-size: 1.2em;
     position: absolute;
     color: #0065FC;
     padding: 16px ;
     background-color: #DEEBFF;
     border-radius: 35px;
-    margin-right: -35px;
-    margin-top: 17px;
+    margin-left: 18px;
+    margin-top: 16px;
 }
 
 #familial p
 {
-    padding: 13px 15px 13px 50px;
+    padding: 13px 8px 13px 60px;
     border: 3px #F2F2F2 solid;
     border-radius: 30px;
     font-weight: 800;
+    width: 78px;
 }
 
+/* filtre romantique */
 #romantique
 {
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-    margin-right: 10%;
+    margin-left: 10px;
+    position: relative;
 }
 
 #romantique i 
 {
+    width: 20px;
+    height: 20px;
+    text-align: center;
     font-size: 1.2em;
     position: absolute;
     color: #0065FC;
     padding: 16px ;
     background-color: #DEEBFF;
     border-radius: 35px;
-    margin-right: -35px;
-    margin-top: 17px;
+    margin-left: 18px;
+    margin-top: 16px;
 }
 
 #romantique p
 {
-    padding: 13px 15px 13px 50px;
+    padding: 13px 10px 13px 60px;
     border: 3px #F2F2F2 solid;
     border-radius: 30px;
     font-weight: 800;
+    width: 110px;
 }
 
+/* filtre animaux */
 #animaux
 {
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
+    margin-left: 10px;
+    position: relative;
+    margin-right: 100px;
 }
 
 #animaux i 
 {
+    width: 20px;
+    height: 20px;
+    text-align: center;
     font-size: 1.2em;
     position: absolute;
     color: #0065FC;
     padding: 16px ;
     background-color: #DEEBFF;
     border-radius: 35px;
-    margin-right: -35px;
-    margin-top: 17px;
+    margin-left: 18px;
+    margin-top: 16px;
 }
 
 #animaux p
 {
-    padding: 13px 15px 13px 50px;
+    padding: 13px 8px 13px 60px;
     border: 3px #F2F2F2 solid;
     border-radius: 30px;
     font-weight: 800;
+    width: 160px;
+}
+
+/* info */
+#info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#info i
+{
+    color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* catégorie les plus populaires */
+#categorie
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px 10px 10px;
+}
+
+#categorie h1
+{
+    font-size: 1.6em;
+}
+
+#categorie i
+{
+    font-size: 1.6em;
+    margin-top: 25px;
+}
+
+/* Hotel Le soleil du matin */
+#soleilImg img
+{
+    margin-left: -45px;
+    height: auto; 
+    width: 220px;
+}
+
+/* Au coeur de l'eau Chambres d'hôtes */
+#eauImg img
+{
+    margin-top:-5px; 
+    margin-left: -50px;
+    height: auto; 
+    width: 220px;
+}
+
+/* Hotel Tout bleu et blanc */
+#bleuImg img
+{
+    margin-top:-35px; 
+    margin-left: -5px;
+    height:auto; 
+    width: 140px;
+}
+
+/* caractéristiques communes hotels populaires*/
+.cadre
+{
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 1em rgb(212, 212, 212);
+    width: 350px;
+    height: 140px;
+}
+
+.formatImg
+{
+    text-align: center; 
+    width: 140px; 
+    height: auto;
+    overflow: hidden; 
+    margin-right: 20px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.caracteristiques
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.caracteristiques h2
+{
+    font-size: 1.1em;
+    margin-bottom: -10px;
+}
+
+.stars
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+}
+
+#eau .stars
+{
+    margin-top: 5px;
+}
+
+.lastStar
+{
+    color: #F2F2F2;
+    margin-top:-1px;
+}
+
+/* Hebergements à Marseille */
+#hebergements h1
+{
+    margin: 30px 0px 20px 30px
+}
+
+#hebergements h3
+{
+    font-size: 1.2em;
+    margin: 30px 0px 50px 30px
+}
+
+/* Images hebergements à Marseille */
+#cannebiereImg img, #portImg img, #mouettesImg img, #panierImg img
+{
+    margin-top:-75px; 
+    margin-left: -5px;
+    height:auto; 
+    width: 410px;
+}
+
+#merImg img, #aminaImg img
+{
+    margin-top:-245px; 
+    margin-left: -5px;
+    height:auto; 
+    width: 410px;
+}
+
+
+/* caractéristiques communes hebergements à Marseille */
+.cadre2
+{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 1em rgb(212, 212, 212);
+    width: 400px;
+}
+
+.formatImg2
+{
+    text-align: center; 
+    width: 400px; 
+    height: 135px;
+    overflow: hidden; 
+    border-radius: 15px 15px 0px 0px;
+}
+
+.caracteristiques2
+{
+    margin-left: 15px;
+}
+
+.caracteristiques2 h2
+{
+    font-size: 1.1em;
+    margin-bottom: -10px;
+}
+
+#hotelsMarseille .stars
+{
+    margin-top : -5px;
+}
+
+#hotelsMarseille .lastStar
+{
+    margin-top : -1.5px;
+}
+
+
+/* Activités */
+#activités h1
+{
+    margin: 30px 0px 20px 30px
+}
+
+#vieuxImg img, #frioulImg img, #calanquesImg img
+{
+    margin-top:-40px; 
+    margin-left: -5px;
+    height:auto; 
+    width: 405px;
+}
+
+#fortImg img
+{
+    margin-top:-210px; 
+    margin-left: -5px;
+    height:auto; 
+    width: 405px;
+}
+
+#notreDameImg img
+{
+    margin-top:-20px; 
+    margin-left: -5px;
+    height:auto; 
+    width: 405px;
+}
+
+#longchampImg img
+{
+    margin-top:-55px; 
+    margin-left: -5px;
+    height:auto; 
+    width: 405px;
+}
+
+
+/* Caractéristiques communes Activités */
+.cadre3
+{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 1em rgb(212, 212, 212);
+    width: 400px;
+}
+
+.formatImg3
+{
+    text-align: center; 
+    width: 400px; 
+    height: 135px;
+    overflow: hidden; 
+    border-radius: 15px 15px 0px 0px;
+}
+
+#activitésMarseille h2
+{
+    font-size: 1.1em;
+    margin-left: 15px;
+}
+
+#aPropos h2, #assistance h2, #nosHebergements h2
+{
+    font-size: 1.2em;
+}
+
+#aPropos a, #assistance a, #nosHebergements a
+{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -226,7 +549,6 @@ nav
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5%;
     border-bottom: 4px #F2F2F2 solid;
 }
 
@@ -244,23 +566,34 @@ nav
     justify-content: center;
 }
 
-h1
+#populaires
 {
-    font-size: 1.7em;
-    margin: 5% 15% 3% 5%;
+    background-color: #F2F2F2;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
-header p 
+footer
 {
-    margin-left: 5%;
-    margin-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 60px;
 }
-    
-header h2
+
+#aPropos, #assistance
 {
-    margin-left: 5%;
-    font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
+
+#nosHebergements
+{
+    margin-left: 20px;
+}
+
 
 
 
