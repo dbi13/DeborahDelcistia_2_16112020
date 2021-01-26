@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css"/>
@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6ddb6ac829.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
+        <lang></lang>
     </head>
     
     <body>
@@ -35,10 +36,10 @@
             </div>
 
             <!-- barre de recherche -->
-            <form method="post" action="">
+            <form method="post" action="form">
                 <div id="map"><i class="fas fa-map-marker-alt"></i></div>
                 <input type="search" value="Marseille, France" class="villeSearch"/>
-                <button type="submit"><i class="fas fa-search" id="send"></i><p id="search">Rechercher</p></button>
+                <button type="submit"><i class="fas fa-search" id="send"></i><span id="search">Rechercher</span></button>
             </form>
 
             <!-- filtres -->
@@ -74,12 +75,12 @@
         <!-- contenu principal de la page -->
         <main>
 
-            <section id="catHebergements">
+            <div id="catHebergements">
             <!-- section 1 : Les plus populaires -->
                 <section id="populaires">
 
                     <div id="categorie">
-                        <h1>Les plus populaires</h1>
+                        <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
 
@@ -93,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="caracteristiques">
-                                <h2>Hôtel Le soleil du matin</h2>
+                                <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
                                 <div class="stars">
                                     <i class="fas fa-star"></i>
@@ -113,7 +114,7 @@
                                 </div>
                             </div>
                             <div class="caracteristiques">
-                                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p id="eauText">Nuit à partir de 71€</p>
                                 <div class="stars">
                                     <i class="fas fa-star"></i>
@@ -135,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="caracteristiques">
-                                <h2>Hôtel Tout bleu et blanc</h2>
+                                <h3>Hôtel Tout bleu et blanc</h3>
                                 <p>Nuit à partir de 68€</p>
                                 <div class="stars">
                                     <i class="fas fa-star"></i>
@@ -155,7 +156,7 @@
                 <!-- section 2 : Hébergements à Marseille -->
                 <section id="hebergements">
 
-                        <h1>Hébergements à Marseille</h1>
+                        <h2>Hébergements à Marseille</h2>
 
                         <div id="hotelsMarseille">
                             <!-- Auberge la Cannebière -->
@@ -166,7 +167,7 @@
                                     </div>
                                 </div>
                                 <div class="caracteristiques2">
-                                    <h2>Auberge la Cannebière</h2>
+                                    <h3>Auberge la Cannebière</h3>
                                     <p>Nuit à partir de 25€</p>
                                     <div class="stars">
                                         <i class="fas fa-star"></i>
@@ -188,7 +189,7 @@
                                     </div>
                                 </div>
                                 <div class="caracteristiques2">
-                                    <h2>Hôtel du port</h2>
+                                    <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de 52€</p>
                                     <div class="stars">
                                         <i class="fas fa-star"></i>
@@ -208,7 +209,7 @@
                                     </div>
                                 </div>
                                 <div class="caracteristiques2">
-                                    <h2>Hôtel Les mouettes</h2>
+                                    <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de 76€</p>
                                     <div class="stars">
                                         <i class="fas fa-star"></i>
@@ -230,7 +231,7 @@
                                     </div>
                                 </div>
                                 <div class="caracteristiques2">
-                                    <h2>Hôtel de la mer</h2>
+                                    <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de 46€</p>
                                     <div class="stars">
                                         <i class="fas fa-star"></i>
@@ -252,7 +253,7 @@
                                     </div>
                                 </div>
                                 <div class="caracteristiques2">
-                                    <h2>Auberge Le Panier</h2>
+                                    <h3>Auberge Le Panier</h3>
                                     <p>Nuit à partir de 23€</p>
                                     <div class="stars">
                                         <i class="fas fa-star"></i>
@@ -274,7 +275,7 @@
                                     </div>
                                 </div>
                                 <div class="caracteristiques2">
-                                    <h2>Hôtel chez Amina</h2>
+                                    <h3>Hôtel chez Amina</h3>
                                     <p>Nuit à partir de 96€</p>
                                     <div class="stars">
                                         <i class="fas fa-star"></i>
@@ -287,15 +288,15 @@
                             </div>
                         </div>
                         
-                        <h3><a href="">Afficher plus</a></h3>
+                        <h4><a href="">Afficher plus</a></h4>
 
                 </section>
-            </section>
+            </div>
 
             <!-- section 3 : Activités à Marseille -->
             <section id="activités">
 
-                <h1>Activités à Marseille</h1>
+                <h2>Activités à Marseille</h2>
 
                 <div id="activitésMarseille">
                     <div id="groupe1">
@@ -307,7 +308,7 @@
                                         <a href=""><img src="Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt = "vieux port"></a>
                                     </div>
                                 </div>
-                                <h2>Vieux Port</h2>
+                                <h3>Vieux Port</h3>
                             </div>
                         </article>
 
@@ -320,7 +321,7 @@
                                             <a href=""><img src="Images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt = "fort de Pomegues"></a>
                                         </div>
                                     </div>
-                                    <h2>Fort de Pomègues</h2>
+                                    <h3>Fort de Pomègues</h3>
                                 </div>
                             </article>
 
@@ -332,7 +333,7 @@
                                             <a href=""><img src="Images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt = "Iles du Frioul"></a>
                                         </div>
                                     </div>
-                                    <h2>Îles du Frioul</h2>
+                                    <h3>Îles du Frioul</h3>
                                 </div>
                             </article>
                         </aside>
@@ -347,7 +348,7 @@
                                         <a href=""><img src="Images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt = "parc des calanques"></a>
                                     </div>
                                 </div>
-                                <h2>Parc National des Calanques</h2>
+                                <h3>Parc National des Calanques</h3>
                             </div>
                         </article>
 
@@ -360,7 +361,7 @@
                                             <a href=""><img src="Images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt = "notre dame de la garde"></a>
                                         </div>
                                     </div>
-                                    <h2>Notre-Dame-de-la-Garde</h2>
+                                    <h3>Notre-Dame-de-la-Garde</h3>
                                 </div>
                             </article>
 
@@ -372,7 +373,7 @@
                                             <a href=""><img src="Images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt = "parc Longchamp"></a>
                                         </div>
                                     </div>
-                                    <h2>Parc Longchamp</h2>
+                                    <h3>Parc Longchamp</h3>
                                 </div>
                             </article>
                         </aside>
