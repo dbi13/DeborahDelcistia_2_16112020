@@ -251,7 +251,6 @@ nav a:hover
     cursor:pointer
 }
 
-
 /* résolution mobile  */
 @media all and (max-device-width: 480px)
 {  
@@ -284,19 +283,21 @@ nav a:hover
         margin: 20px 0px 20px 50px;
     }
 
-
-    nav
+    #heb:hover, #act:hover
     {
-        justify-content: space-around;
-        border-bottom: 4px #F2F2F2 solid;
+        border-bottom: 5px #0065FC solid;
+        padding-bottom: 30px;
+        width: 50%;
     }
-
+    
     #heb, #act
     {
         display: flex;
         width: 50%;
         justify-content: center;
-        margin-top: 40px;
+        border-bottom: 5px #F2F2F2 solid;
+        padding-bottom: 30px;
+        margin: 40px 0px 0px 0px;
     }
 
     #heb a, #act a 
