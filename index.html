@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style2.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6ddb6ac829.js" crossorigin="anonymous"></script>
@@ -14,16 +15,16 @@
         <!-- haut de page -->
         <header>
 
-            <div id="head">
+            <div class="head">
                 <div id="hautSite">
                     <a id="logo" href=""><img src="Images/logo/Reservia.svg" alt = "logo reservia" ></a>
-                    <a id="inscription" href="">nscrire</a>
+                    <a id="inscription" href="">S'inscrire</a>
                 </div>
 
                 <!-- navigation -->
                 <nav>
-                    <p id="heb"><a href="#categorie">Hébergements</a></p>
-                    <p id="act"><a href="#activités">Activités</a></p>
+                    <p class="navigation"><a href="#populaires">Hébergements</a></p>
+                    <p class="navigation"><a href="#activités">Activités</a></p>
                 </nav>
             </div>
 
@@ -42,23 +43,23 @@
             </form>
 
             <!-- filtres -->
-            <div id="filter">
+            <div class="partieFiltres">
                 <h2>Filtres</h2>
 
-                <div id="filtres">
-                    <div id="economique">
+                <div class="filtres">
+                    <div class="containerFiltres economique">
                         <i class="fas fa-money-bill-wave"></i>
                         <p>Économique</p>
                     </div>
-                    <div id="familial">
+                    <div class="containerFiltres familial">
                         <i class="fas fa-child"></i>
                         <p>Familial</p>
                     </div>
-                    <div id="romantique">
+                    <div class="containerFiltres romantique">
                         <i class="fas fa-heart"></i>
                         <p>Romantique</p>
                     </div>
-                    <div id="animaux">
+                    <div class="containerFiltres animaux">
                         <i class="fas fa-dog"></i>
                         <p>Animaux autorisés</p>
                     </div>
@@ -74,21 +75,21 @@
         <!-- contenu principal de la page -->
         <main>
 
-            <div id="catHebergements">
+            <div class="catHebergements">
             <!-- section 1 : Les plus populaires -->
                 <section id="populaires">
 
-                    <div id="categorie">
+                    <div class="categorie">
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
 
-                    <div id="hotelPop">
+                    <div class="hotelPop">
 
                         <!-- Hôtel Le soleil du matin -->
                         <div class="cadre">
                             <div class="formatImg">
-                                <div id="soleilImg">
+                                <div class="photoHotel soleil">
                                     <a href=""><img src="Images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt = "chambre soleil" ></a>
                                 </div>
                             </div>
@@ -108,7 +109,7 @@
                         <!-- Au coeur de l'eau Chambres d'hôtes -->
                         <div class="cadre">
                             <div class="formatImg">
-                                <div id="eauImg">
+                                <div class="photoHotel eau">
                                     <a href=""><img src="Images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt = "chambre eau" ></a>
                                 </div>
                             </div>
@@ -130,7 +131,7 @@
                         <!-- Hôtel Tout bleu et blanc -->
                         <div class="cadre">
                             <div class="formatImg">
-                                <div id="bleuImg">
+                                <div class="photoHotel bleu">
                                     <a href=""><img src="Images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt = "chambre bleu et blanc" ></a>
                                 </div>
                             </div>
@@ -153,15 +154,15 @@
                 </section>
 
                 <!-- section 2 : Hébergements à Marseille -->
-                <section id="hebergements">
+                <section class="hebergements">
 
                         <h2>Hébergements à Marseille</h2>
 
-                        <div id="hotelsMarseille">
+                        <div class="hotelsMarseille">
                             <!-- Auberge la Cannebière -->
                             <div class="cadre2">
                                 <div class="formatImg2">
-                                    <div id="cannebiereImg">
+                                    <div class="photoHotel2 cannebiere">
                                         <a href=""><img src="Images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt = "auberge Cannebière" ></a>
                                     </div>
                                 </div>
@@ -183,7 +184,7 @@
                             <!-- Hôtel du port -->
                             <div class="cadre2">
                                 <div class="formatImg2">
-                                    <div id="portImg">
+                                    <div class="photoHotel2 port">
                                         <a href=""><img src="Images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt = "hotel du port" ></a>
                                     </div>
                                 </div>
@@ -203,7 +204,7 @@
                             <!-- Hôtel Les mouettes -->
                             <div class="cadre2">
                                 <div class="formatImg2">
-                                    <div id="mouettesImg">
+                                    <div class="photoHotel2 mouettes">
                                         <a href=""><img src="Images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt = "hotel mouettes" ></a>
                                     </div>
                                 </div>
@@ -225,7 +226,7 @@
                             <!-- Hôtel de la mer -->
                             <div class="cadre2">
                                 <div class="formatImg2">
-                                    <div id="merImg">
+                                    <div class="photoHotel2 mer">
                                         <a href=""><img src="Images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt = "hotel de la mer" ></a>
                                     </div>
                                 </div>
@@ -247,7 +248,7 @@
                             <!-- Auberge Le Panier -->
                             <div class="cadre2">
                                 <div class="formatImg2">
-                                    <div id="panierImg">
+                                    <div class="photoHotel2 panier">
                                         <a href=""><img src="Images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt = "Auberge le panier" ></a>
                                     </div>
                                 </div>
@@ -269,7 +270,7 @@
                             <!-- Hôtel chez Amina -->
                             <div class="cadre2">
                                 <div class="formatImg2">
-                                    <div id="aminaImg">
+                                    <div class="photoHotel2 amina">
                                         <a href=""><img src="Images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt = "hotel chez amina" ></a>
                                     </div>
                                 </div>
@@ -298,12 +299,12 @@
                 <h2>Activités à Marseille</h2>
 
                 <div id="activitésMarseille">
-                    <div id="groupe1">
+                    <div class="groupe1">
                         <!-- Vieux Port -->
                         <article class="cadreAct">
                             <div class="cadreGRAND" id="cadreVieux">
                                 <div class="formatImg3 formatAct">
-                                    <div id="vieuxImg">
+                                    <div class="photoHotel3 vieux">
                                         <a href=""><img src="Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt = "vieux port"></a>
                                     </div>
                                 </div>
@@ -311,12 +312,12 @@
                             </div>
                         </article>
 
-                        <aside id="first">
+                        <aside class="first">
                             <!-- Fort de Pomègues -->
                             <article class="cadreAct">
-                                <div id="cadre3">
-                                    <div id="formatImg4" class="formatAct">
-                                        <div id="fortImg">
+                                <div class="cadre3">
+                                    <div class="formatImg4 formatAct">
+                                        <div class="photoHotel3 fort">
                                             <a href=""><img src="Images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt = "fort de Pomegues"></a>
                                         </div>
                                     </div>
@@ -326,9 +327,9 @@
 
                             <!-- Îles du Frioul -->
                             <article class="cadreAct">
-                                <div id="cadre4">
-                                    <div id="formatImg5" class="formatAct">
-                                        <div id="frioulImg">
+                                <div class="cadre4">
+                                    <div class="formatImg5 formatAct">
+                                        <div class="photoHotel3 frioul">
                                             <a href=""><img src="Images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt = "Iles du Frioul"></a>
                                         </div>
                                     </div>
@@ -338,12 +339,12 @@
                         </aside>
                     </div>
 
-                    <div id="groupe2">
+                    <div class="groupe2">
                         <!-- Parc National des Calanques -->
                         <article class="cadreAct">
-                            <div class="cadreGRAND" id="cadreCalanques">
+                            <div class="cadreGRAND cadreCal" id="cadreCalanques">
                                 <div class="formatImg3 formatAct">
-                                    <div id="calanquesImg">
+                                    <div class="photoHotel3 calanques">
                                         <a href=""><img src="Images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt = "parc des calanques"></a>
                                     </div>
                                 </div>
@@ -351,12 +352,12 @@
                             </div>
                         </article>
 
-                        <aside id="second">
+                        <aside class="second">
                             <!-- Notre-Dame-de-la-Garde -->
                             <article class="cadreAct">
-                                <div class="cadre5">
+                                <div class="cadre5 dame">
                                     <div class="formatImg6 formatAct">
-                                        <div id="notreDameImg">
+                                        <div class="photoHotel3 notreDame">
                                             <a href=""><img src="Images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt = "notre dame de la garde"></a>
                                         </div>
                                     </div>
@@ -366,9 +367,9 @@
 
                             <!-- Parc Longchamp -->
                             <article class="cadreAct">
-                                <div class="cadre5">
+                                <div class="cadre5 long">
                                     <div class="formatImg6 formatAct">
-                                        <div id="longchampImg">
+                                        <div class="photoHotel3 longchamp">
                                             <a href=""><img src="Images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt = "parc Longchamp"></a>
                                         </div>
                                     </div>
@@ -385,20 +386,20 @@
         <!-- bas de page -->
         <footer>
 
-            <div id="aPropos">
+            <div class="menuBas aPropos">
                 <h2>A propos</h2>
                 <p><a href=""> Fonctionnement du site </a></p>
                 <p><a href=""> Conditions générales de vente </a></p>
                 <p><a href=""> Données et confidentialité </a></p>
             </div>
 
-            <div id="nosHebergements">
+            <div class="menuBas nosHebergements">
                 <h2>Nos hébergements</h2>
                 <p><a href=""> Charte qualité </a></p>
                 <p><a href=""> Soumettre votre hôtel </a></p>
             </div>
 
-            <div id="assistance">
+            <div class="menuBas assistance">
                 <h2>Assistance</h2>
                 <p><a href=""> Centre d'aide </a></p>
                 <p><a href=""> Nous contacter </a></p>
