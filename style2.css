@@ -1007,7 +1007,7 @@ footer {
     }
 
     .frioul img {
-        margin-right:0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
     }
 
     /* footer */
@@ -1193,7 +1193,7 @@ footer {
     }
 
     .hotelPop {
-        margin: 0px 25px 0px 25px,
+        margin: 0px 25px 0px 25px;
     }
     
     .soleil img, .eau img, .cadre, .formatImg {
