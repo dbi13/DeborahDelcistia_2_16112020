@@ -156,11 +156,12 @@ footer {
 }
 
 /* résolution mobile  */
-@media all and (max-width: 767px) {  
+@media all and (max-width: 767px) { 
 
     body, .navigation {
         margin: 0px;
     }
+
     /* tailles polices */
     .caracteristiques h3, .stars, .caracteristiques2 h3, #activitésMarseille h3, .hebergements h4, .menuBas h2, #info p, nav p {
         font-size: 2em;
